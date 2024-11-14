@@ -1,0 +1,91 @@
+:root{
+  --color1:#343434;
+  --color2:#01d7f4;
+  --color3:#ffdf03;
+  --color4:#fd7b03;
+  --color5:#ff0014;
+  --color6:#fff;
+  --color7:#d2d2d2;
+  --color8:#480C6C;
+  --color9:#8A7131;
+}
+
+#container {
+  text-align: center;
+  --text-color: #FF00;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background:#3d1d1d;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff00;
+  margin: 0;
+}
+
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content {
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  color: rgba(255, 0, 0, 0); /* Hace que el texto sea más visible */
+}
+
+.contenidoCarta {
+  color:rgb(255, 255, 255);
+  background:#3d1d1d;
+  outline-color: #343434;
+  outline-style: groove;
+}
+.contenidoCarta3{
+  color:rgb(255, 255, 255);
+  background:#3d1d1d;
+  outline-color: #343434;
+  outline-style: groove;
+  padding-top:10px;
+  padding-bottom: 50px;
+}
+#para-ion-padding{
+  padding-block-end: 100px;
+}
+.bienvenido{
+  background:#3d1d1d;
+}
+.home{
+  background:#3d1d1d;
+}
+.calendario1{
+  background:#3d1d1d;
+  padding-left: 30px;
+}
+.barra{
+  color: #343434;
+}
+.cartainformacion{
+  padding: 10px;
+  width: 270px;
+}
+.Titulo{
+  padding-bottom: 20px;
+}
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* Variables globales */
+:root {
+    --primary-color: #FF6B4A;
+    /* Color naranja del logo */
+    --background-color: #3D1D1D;
+    /* Fondo marrón oscuro */
+    --text-color: #FFFFFF;
+    /* Texto blanco */
+    --input-background: #4D2828;
+    /* Fondo más claro para inputs */
+    --font-family: 'Inter', sans-serif;
+    /* Fuente moderna similar a la imagen */
+}
+
+.ion-padding{
+    --background: none; /* Quita el fondo sólido */
+    background: linear-gradient(
+        rgba(255, 107, 74, 0.6), 
+        rgba(255, 107, 74, 0.6)
+    ), 
+    url("/assets/universida_fondo.jpg") center / cover no-repeat;
+    color: #ffff;
+    font-family: var(--font-family);
+}
+
+
+/* Estilos del header */
+.barra {
+    --background: #3d1d1d;
+    /* Cambia este valor al color de fondo que desees */
+    --color: #ffff;
+    /* Cambia este valor al color del texto que desees */
+}
+
+
+ion-title {
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Estilos existentes del toolbar */
+ion-toolbar {
+    --background: #3D1D1D;
+    --color: #FFFFFF;
+}
+
+/* Nuevos estilos para el logo */
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 10px 16px;
+    gap: 10px;
+}
+
+.logo-text {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 500px;
+    color: #FFFFFF;
+}
+
+.logo-container img {
+    height: 100px;
+    /* Ajusta este valor según el tamaño que necesites */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 576px) {
+    .logo-container img {
+        height: 50px;
+        /* Logo más pequeño en móviles */
+    }
+}
+
+/* Contenido principal */
+ion-content {
+    --background: #3d1d1d;
+    --color: #ffff;
+    font-family: var(--font-family);
+    margin: 20px auto;
+}
+
+.ion-padding {
+    padding: 2rem;
+    max-width: 400px;
+    margin: 100px auto;
+
+}
+
+/* Estilos de los inputs */
+ion-item {
+    --background: #4D2828;
+    --border-radius: 8px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --highlight-height: 2px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+ion-label {
+    --color: #ffff;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+ion-input {
+    --color: #ffff;
+    --placeholder-color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-family);
+}
+
+/* Botones */
+ion-button {
+    --background: #FF6B4A;
+    --background-hover: #FF8266;
+    --border-radius: 8px;
+    --box-shadow: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-transform: none;
+    height: 48px;
+    margin-top: 24px;
+    color: #FFFFFF;
+}
+
+.rest {
+    --background: #3D1D1D;
+}
+
+ion-button[fill="clear"] {
+    color: #FF6B4A;
+    font-size: 14px;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Efectos hover */
+ion-item:hover {
+    --background: #4D2828;
+    opacity: 0.9;
+}
+
+/* Animaciones */
+ion-item,
+ion-button {
+    transition: all 0.3s ease;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 576px) {
+    .ion-padding {
+        padding: 1rem;
+    }
+
+    ion-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,74 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<ion-header>
+  <ion-toolbar class="barra">
+    <ion-title>Education PRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content id="para-ion-padding">
+    <mat-card class="Bienvenido bienvenido">
+    <h2> Bienvenido, {{ usuario.nombre }}</h2>
+    </mat-card>
+    <!-- Tarjeta 1: Información del usuario -->
+    <mat-card class="CARD1 contenidoCarta">
+      <mat-card-header>
+        <mat-card-title class="Titulo tuperfil">Tu Perfil</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Aquí puedes gestionar tu información personal.</p>
+      </mat-card-content>
+            <ion-card class="INFO cartainformacion">
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+          <ion-card-header>
+            <ion-card-title>{{usuario.nombre}}</ion-card-title>
+            <ion-card-subtitle>{{usuario.role}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            {{usuario.email}}
+          </ion-card-content>
+        </ion-card>
+      <mat-card-actions>
+        <button mat-button (click)="editarPerfil()">Editar Perfil</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Tarjeta 2: Estadísticas o funciones -->
+    <mat-card class="CARD2 contenidoCarta">
+      <mat-card-header>
+        <mat-card-title>Estadísticas</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <ion-searchbar placeholder="Elegir materia"></ion-searchbar>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="primary" (click)="verEstadisticas()">Ver Estadísticas</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="Calendario calendario1">
+      <mat-card-header>
+        <mat-card-title color="tertiary" class="text-center">Calendario de evaluaciones.</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Tarjeta 3: Botón para desconectarse -->
+    <mat-card class="CARD3 contenidoCarta3">
+      <mat-card-header>
+        <mat-card-title>Sesión</mat-card-title>
+      </mat-card-header>
+      <mat-card-content >
+        <p>Puedes cerrar tu sesión aquí.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="warn" (click)="cerrarSesion()">Cerrar Sesión</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </ion-content>
+
+
