@@ -6,5 +6,5 @@ export interface Environment {
 
 export const environment: Environment = {
   production: false,
-  sendgridApiKey: ''  // Reemplaza esto con tu API key real de SendGrid
+  sendgridApiKey: ' '  // Reemplaza esto con tu API key real de SendGrid
 };
